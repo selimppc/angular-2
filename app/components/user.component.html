@@ -22,22 +22,35 @@
 
 <h3> Edit User </h3>
 <form>
-    <label> Name: </label><br/>
-    <input type="text" name="name" [(ngModel)]="name" />
-    <label> Email: </label><br/>
-    <input type="text" name="email" [(ngModel)]="email" />
-    <label> Street: </label><br/>
-    <input type="text" name="address.street" [(ngModel)]="address.street" />
-    <label> City: </label><br/>
-    <input type="text" name="address.city" [(ngModel)]="address.city" />
-    <label> State: </label><br/>
-    <input type="text" name="address.state" [(ngModel)]="address.state" />
+    <table class="table">
+        <tr>
+            <td> <label> Name: </label> </td>
+            <td> <input type="text" name="name" [(ngModel)]="name" /> </td>
+        </tr>
+        <tr>
+            <td> <label> Email: </label> </td>
+            <td> <input type="text" name="email" [(ngModel)]="email" /> </td>
+        </tr>
+        <tr>
+            <td> <label> Street: </label> </td>
+            <td> <input type="text" name="address.street" [(ngModel)]="address.street" /> </td>
+        </tr>
+        <tr>
+            <td> <label> City: </label> </td>
+            <td> <input type="text" name="address.city" [(ngModel)]="address.city" /> </td>
+        </tr>
+        <tr>
+            <td> <label> State: </label> </td>
+            <td> <input type="text" name="address.state" [(ngModel)]="address.state" /> </td>
+        </tr>
+    </table>
+
 
 </form>
 
 <hr/>
 
-<h3> Posts </h3>
+<h3 style="text-decoration: underline; color: green"> Posts (it comes from json api) </h3>
 <div *ngFor="let post of posts">
     <h3> {{post.title}} </h3>
     <p> {{post.body}} </p>
