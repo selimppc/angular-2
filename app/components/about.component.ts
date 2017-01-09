@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'about',
   template: `
       <h1>About This App </h1>
+      <p> We are done </p>
       `,
 })
 export class AboutComponent  { 
